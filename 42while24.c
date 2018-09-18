@@ -2,20 +2,25 @@
 int main(void)
 {
     int sum=0;
-    int k;
+    int k=0;
 
-    for (k=0;k<5;k++)
+    while (k<5)
     {
-        sum+=k; //use something different in "while" version
+        printf("%d\n" ,k);
+        sum=sum+k; //use something different in "while" version
+        k=k+1;
     }
 
-    printf ("%d\n",sum);
+    printf ("Sum - %d\n",sum);
 
-    k=5;
 
-    while (k>0) {
-        k=k-1; //use something different in "for" version
-        printf ("%d\n", k);
+    for (k=10;k>0;k--) //in a for loop it doesn't hit k++ the first time
+    {
+
+        printf ("%2d\n", k);
+    }
+    {
+        printf ("Blastoff!");
     }
 
 }
